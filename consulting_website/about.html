@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 >About Us</h1>
+    </section>
+
+    <!-- ------About Us Content------ -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h3>01.Driven to innovate</h3>
+                <p>Имея большой опыт в области проверенных временем технологий программирования, мы не проходим мимо свежих 
+                     и разработок. Теперь мы создаем ИТ-стратегии с оглядкой на интеллектуальные подключенные устройства и 
+                     экосистемы, децентрализованные бухгалтерские книги и P2P-транзакции, интеллектуальную автоматизацию, 
+                     обеспечиваемую искусственным интеллектом.</p>
+                
+                <h3>02.Owning unmatched experience</h3>
+                <p>Наша международная сеть ИТ-консультантов, архитекторов решений, технических команд, инженеров по обработке
+                     данных и безопасности упрощает все - от выявления проблем до внедрения решений. Мы будем рядом на протяжении 
+                     всего путешествия и позаботимся о том, чтобы вы не сдались на полпути.</p>
+                     <img src="./images/about-her02.jpg" alt="">
+                     <h3>05.Driven to innovate</h3>
+                <p>На протяжении всей нашей истории мы наладили ряд партнерских отношений с технологическими лидерами, которые 
+                    высоко оценили нашу техническую компетентность и способность понимать потребности наших клиентов и воплощать
+                     их в качественные услуги</p>
+                     
+                     
+            </div>
+            <div class="about-col">
+                <img src="./images/about-hero.jpg" alt="">
+                <h3>03.Owning unmatched experience</h3>
+                <p>Мы предоставляем нашим клиентам только высококачественное программное обеспечение и услуги. Мы гарантируем, что
+                     вы получите ощутимую отдачу от своих инвестиций в ИТ, насладитесь здоровыми проектными процессами, профессиональными 
+                     и мотивированными командами, эффективной коммуникацией между Bright Future, вашими командами и заинтересованными 
+                     сторонами.</p>
+
+                     <h3>04.Driven to innovate</h3>
+                <p>Мы разработали набор управленческих и технологических практик, которые позволяют нам выпускать новые версии приложений
+                     каждые 2-3 недели и внедрять незначительные обновления до нескольких раз в день. Мы достигаем этого благодаря 
+                     итеративному подходу к разработке, прибегая к гибким методам управления проектами и полагаясь на облачные архитектуры 
+                     и современные подходы к управлению инфраструктурой.</p>
+                
+            </div>
+        </div>
+    </section>
+  
+
+
+
+<!-- -----Footer------- -->
+<section class="footer">
+    <h4>Bright Future</h4>
+    <p>IT-Consulting-это экспертная поддержка нетехнологических компаний по вопросам улучшения,
+        автоматизации<br> и диджитализации бизнеса с помощью информационных технологий</p>
+    <div class="icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+
+    </div>    
+</section>
+
+
+
+
+    <!--------- Javascript for Toggle----------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

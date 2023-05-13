@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/services.html">Services</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+        <div class="text-box">
+            <h1>Information Technology Consulting</h1>
+            <p>IT-Consulting-это экспертная поддержка нетехнологических компаний по вопросам улучшения,
+                автоматизации и диджитализации<br> бизнеса с помощью информационных технологий
+            </p>
+            <a href="/about.html" class="hero-btn">Visit us to know more</a>
+        </div>
+
+
+    </section>
+
+
+    <!-- -----our services------- -->
+    <section class="service">
+        <h1>Services We Offer</h1>
+        <div class="row">
+            <div class="service-col">
+                <img src="./images/service1.jpg">
+                <div class="layer">
+                    <h3>Cloud Solutions</h3>
+                        <p>Мы помогаем компаниям выявлять свои потребности в облачных вычислениях
+                            и использовать их для более безопасных и эффективных операции</p>
+                        <a href="/services.html">Read More</a>
+                </div>
+            </div>
+
+            <div class="service-col">
+                <img src="./images/service2.jpg">
+                <div class="layer">
+                    <h3>Managed IT services</h3>
+                        <p>ИТ-консальтинг включает в себя предоставление стратегических рекомендации
+                            и предложений по улучшению ИТ-среды</p>
+                        <a href="/services.html">Read More</a>
+                </div>
+            </div>
+
+            <div class="service-col">
+                <img src="./images/service3.jpg">
+                <div class="layer">
+                    <h3>Software support and maintenance</h3>
+                        <p>Мы обеспечиваем бесперебойную работу и актуальность вашего программного
+                            обеспечения, решения проблем и предостовления новых функций и интеграции</p>
+                        <a href="/services.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------testimonials-------- -->
+    <section class="testimonials">
+        <div class="container-test">
+            <h1>Что о нас Говорят</h1>
+            <div class="row">
+                <div class="test-col">
+                    <div class="profile">
+                    <img src="./images/test1.webp" alt="" class="user">
+                    <blockquote>I like the services of Bright Future. There are the best!</blockquote>
+                    <h3>Janara</h3>
+                    </div>
+                </div>
+
+                <div class="test-col">
+                    <div class="profile">
+                    <img src="./images/test1.webp" alt="" class="user">
+                    <blockquote>I like the services of Bright Future. There are the best!</blockquote>
+                    <h3>Aliona</h3>
+                    </div>
+                </div>
+
+
+                <div class="test-col">
+                    <div class="profile">
+                    <img src="./images/test1.webp" alt="" class="user">
+                    <blockquote>I like the services of Bright Future. There are the best!</blockquote>
+                    <h3>Kunduz</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- -----Footer------- -->
+<section class="footer">
+    <h4>Bright Future</h4>
+    <p>IT-Consulting-это экспертная поддержка нетехнологических компаний по вопросам улучшения,
+        автоматизации<br> и диджитализации бизнеса с помощью информационных технологий</p>
+    <div class="icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://web.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+
+    </div>    
+</section>
+
+
+    <!--------- Javascript for Toggle----------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
